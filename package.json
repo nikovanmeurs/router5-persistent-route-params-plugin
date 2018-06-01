@@ -11,7 +11,8 @@
     "build": "yarn clean && scripts/build",
     "clean": "rimraf dist",
     "format": "prettier 'src/**/*.{js,ts}' --write",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "test": "jest"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
