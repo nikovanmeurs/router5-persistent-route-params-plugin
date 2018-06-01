@@ -1,0 +1,19 @@
+{
+    "plugins": [
+        "transform-object-rest-spread"
+    ],
+    "env": {
+        "development": {
+            "ignore": "src/*.test.js",
+            "presets": ["env"]
+        },
+        "test": {
+            "presets": ["env"]
+        },
+        "es": {
+            "ignore": "src/*.test.js",
+            "presets": [["env", { "modules": false }]]
+        }
+    }
+
+}
