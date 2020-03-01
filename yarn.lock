@@ -3019,11 +3019,13 @@ path-parse@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.5.tgz#3c1adf871ea9cd6c9431b6ea2bd74a0ff055c4c1"
 
-path-parser@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/path-parser/-/path-parser-4.1.0.tgz#41e4c69aa88c6b28c6f6e1200e9aebe9acc3da9e"
+path-parser@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/path-parser/-/path-parser-6.1.0.tgz#ee8a1dd7b1ffaf4069f2ddd1c20d1867c8fd3a08"
+  integrity sha512-nAB6J73z2rFcQP+870OHhpkHFj5kO4rPLc2Ol4Y3Ale7F6Hk1/cPKp7cQ8RznKF8FOSvu+YR9Xc6Gafk7DlpYA==
   dependencies:
-    search-params "2.1.2"
+    search-params "3.0.0"
+    tslib "^1.10.0"
 
 path-type@^1.0.0:
   version "1.1.0"
@@ -3334,23 +3336,27 @@ rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.2:
   dependencies:
     glob "^7.0.5"
 
-route-node@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/route-node/-/route-node-3.2.0.tgz#643de314d600b2e19be723851500aa646c5d3a9d"
+route-node@4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/route-node/-/route-node-4.1.1.tgz#9006600160982db0b19d2f093d4271f9fd7548ea"
+  integrity sha512-bJVDVEQvXYqTC/LQ/2ohNZ2gPRO4+3ZvHeafuCyRZAd63qH17yspVfxOBzasE/t7SmSO30sT/yPSEMuPDGHhSQ==
   dependencies:
-    path-parser "4.1.0"
-    search-params "2.1.2"
+    path-parser "6.1.0"
+    search-params "3.0.0"
+    tslib "^1.10.0"
 
-router5-transition-path@^5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/router5-transition-path/-/router5-transition-path-5.3.0.tgz#113f7e09dffee5e22c7275c20fe25969c0bc1599"
+router5-transition-path@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/router5-transition-path/-/router5-transition-path-8.0.0.tgz#cd0431d9d7b64dfb9681056ebb4f3dde58ba143a"
+  integrity sha512-3z69OYHsZf0WzMIVi20XKfHiSbsZvTBrWjh4DdpEoYwh+LIsB7mb+CqL7hONeBw/mlkHmf/XJL/rzjlYwRgdpw==
 
-router5@^6.2.2:
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/router5/-/router5-6.2.2.tgz#5b1f6076fc2b2c93348518b3a454dfd012a23c9c"
+router5@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/router5/-/router5-8.0.0.tgz#28cd8112b8d3bcab3de98766a179ececdd4a7bae"
+  integrity sha512-HYXB94yBZTTK0HrbZyGjOMPc3H+5TjzodY9KctIjgyNB44nuT85y4jjUtm0ufvTPXji0xyPphzKJUa1BpLRHMg==
   dependencies:
-    route-node "3.2.0"
-    router5-transition-path "^5.3.0"
+    route-node "4.1.1"
+    router5-transition-path "^8.0.0"
     symbol-observable "1.2.0"
 
 rsvp@^3.3.3:
@@ -3396,9 +3402,10 @@ sax@^1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
-search-params@2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/search-params/-/search-params-2.1.2.tgz#e0107b7e6f2e973d7991b8fbffc8b6664bc96edd"
+search-params@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/search-params/-/search-params-3.0.0.tgz#dbc7c243058e5a33ae1e9870be91f5aced4100d8"
+  integrity sha512-8CYNl/bjkEhXWbDTU/K7c2jQtrnqEffIPyOLMqygW/7/b+ym8UtQumcAZjOfMLjZKR6AxK5tOr9fChbQZCzPqg==
 
 semver-compare@^1.0.0:
   version "1.0.0"
@@ -3758,6 +3765,11 @@ tr46@^1.0.1:
 trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
+
+tslib@^1.10.0:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
+  integrity sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA==
 
 tslib@^1.9.0:
   version "1.9.2"
